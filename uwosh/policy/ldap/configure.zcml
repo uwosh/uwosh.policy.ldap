@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="uwosh.policy.ldap">
+
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <include package="Products.PloneLDAP" />
+   
+  <genericsetup:registerProfile
+      name="default"
+      title="uwosh.policy.ldap"
+      directory="profiles/default"
+      description="Installs the uwosh.policy.ldap package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  <!-- -*- extra stuff goes here -*- -->
+  
+</configure>

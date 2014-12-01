@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<import-steps>
+    <import-step id="uwosh.policy.ldap.install" version="1"
+        handler="uwosh.policy.ldap.importexport.install"
+        title="Installing step for uwosh.policy.ldap">
+    </import-step>
+</import-steps>
